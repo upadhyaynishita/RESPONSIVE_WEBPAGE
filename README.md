@@ -1,0 +1,143 @@
+# RESPONSIVE_WEBPAGE
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>RESPONSIVE WEBPAGE</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" text="text/css" href="style.css">
+
+
+</head>
+<body>
+
+<div class="jumbotron text-center">
+  <h1><b><marquee behaviour=alternate>Welcome To Experiment 5</b></h1></marquee>
+  <p><h2>Resize this responsive page to see the effect!</p></h2> 
+</div>
+
+
+  
+<div class="container">
+  <div class="row">
+    <div class="col-sm-3">
+      <h3>Property 1</h3>
+      
+    </div>
+    <div class="col-sm-3">
+      <h3>Property 2</h3>
+    </div>
+    
+    
+    <div class="col-sm-3">
+            <h3>Property 3</h3>      
+
+
+
+    </div>
+
+
+
+    <div class="col-sm-3">
+      <h3>Property 4</h3>        
+    </div>
+</div>
+
+</div>
+
+
+
+<div id ="grad" class="container1">
+  <div class="row1">
+    <div class="col-sm-3">
+<script type="text/javascript">    
+          function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+}
+</script>
+
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<br>
+
+
+
+<div id="over" style="position:absolute; width:100%; height:100%">
+
+  <img id="drag1" src="1.jpeg" draggable="true" ondragstart="drag(event)" width="100" height="70">
+
+</div>
+          </div>
+    <div class="col-sm-3">
+    
+<iframe width="300" height="300" src="https://www.youtube.com/embed/5nyFfZnsyNY" frameborder="0" allowfullscreen></iframe>
+    </div>
+    
+    
+    <div class="col-sm-3">
+
+
+      
+    <div id="transition">
+    </div><br>
+    <div id="transform" class="actual">
+    </div><br>
+    <div class="animate">
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+    <div class="col-sm-3">
+
+<div id="mediaq">
+<br>
+<p style="text-align:center"> Please resize the window to see the media query changes<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</p>
+
+
+    </div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+</body>
+</html>
